@@ -7,10 +7,12 @@ import { Button } from "@material-ui/core";
 function Search() {
 	//
 	const [input, setInput] = useState("");
+
 	//
 	const search = e => {
 		e.preventDefault();
 	};
+	//
 	return (
 		<div className="search">
 			{/*  */}
@@ -21,7 +23,7 @@ function Search() {
 				<input
 					//
 					value={input}
-					onChange={e => setInput(e.target.valye)}
+					onChange={e => setInput(e.target.value)}
 				/>
 				<MicIcon />
 				{/*  */}
