@@ -1,0 +1,23 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.home_header {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 30px;
+	align-items: center;
+}
+
+.home_header a {
+	margin-right: 20px;
+	text-decoration: inherit;
+	color: rgba (0, 0, 0, 0.87);
+	font-size: 15px;
+}
+
+.home_header a:hover {
+	text-decoration: underline;
+}
