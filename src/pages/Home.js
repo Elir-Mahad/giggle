@@ -7,8 +7,6 @@ import { Avatar } from "@material-ui/core";
 function Home() {
 	return (
 		<div className="home">
-			<h1>Home page</h1>
-
 			<div className="home_header">
 				{/*  */}
 				<div className="home_headerLeft">
@@ -21,13 +19,17 @@ function Home() {
 					<Link to="/images">Images</Link>
 					<AppsIcon />
 					<Avatar />
-					{/* Icon */}
-					{/* Avatar */}
 				</div>
 				{/*  */}
 			</div>
 
-			<div className="home_body"></div>
+			<div className="home_body">
+				<img
+					//
+					src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+					alt=""
+				/>
+			</div>
 		</div>
 	);
 }

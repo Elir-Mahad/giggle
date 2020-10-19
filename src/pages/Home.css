@@ -17,7 +17,7 @@
     we write 'home_header a' */
 	margin-right: 20px;
 	text-decoration: inherit;
-	color: rgba (0, 0, 0, 0.87);
+	color: rgba(0, 0, 0, 0.87);
 	font-size: 15px;
 }
 
@@ -34,4 +34,16 @@
 
 .home_headerRight > .MuiSvgIcon-root {
 	margin-right: 20px;
+}
+
+.home_body {
+	flex: 1;
+	display: flex;
+	margin-top: 10%;
+	flex-direction: column;
+}
+
+.home_body > img {
+	object-fit: contain;
+	height: 100px;
 }
