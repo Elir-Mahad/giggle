@@ -14,7 +14,7 @@ function Search() {
 	};
 	//
 	return (
-		<div className="search">
+		<form className="search">
 			{/*  */}
 			<div className="search_input">
 				{/*  */}
@@ -33,6 +33,7 @@ function Search() {
 				{/*  */}
 				<Button
 					//
+					type="submit"
 					onClick={search}
 					variant="outlined"
 				>
@@ -42,7 +43,7 @@ function Search() {
 				<Button variant="outlined">I'm feeling lucky</Button>
 				{/*  */}
 			</div>
-		</div>
+		</form>
 	);
 }
 
