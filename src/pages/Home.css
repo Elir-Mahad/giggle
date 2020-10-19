@@ -12,6 +12,9 @@
 }
 
 .home_header a {
+	/* the a tag represents the Link tags. 
+    In the css, we can't write 'home_header Link', 
+    we write 'home_header a' */
 	margin-right: 20px;
 	text-decoration: inherit;
 	color: rgba (0, 0, 0, 0.87);
@@ -20,4 +23,15 @@
 
 .home_header a:hover {
 	text-decoration: underline;
+}
+
+.home_headerRight {
+	display: flex;
+	align-items: center;
+	min-width: 13vw;
+	justify-content: space-between;
+}
+
+.home_headerRight > .MuiSvgIcon-root {
+	margin-right: 20px;
 }
