@@ -1,6 +1,7 @@
 import React from "react";
 import "./Search.css";
 import SearchIcon from "@material-ui/icons/Search";
+import MicIcon from "@material-ui/icons/Mic";
 
 function Search() {
 	return (
@@ -8,6 +9,7 @@ function Search() {
 			<div className="search_input">
 				<SearchIcon className="search_inputIcon" />
 				<input />
+				<MicIcon />
 			</div>
 		</div>
 	);
