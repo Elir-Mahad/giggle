@@ -3,14 +3,28 @@ import "./Search.css";
 import SearchIcon from "@material-ui/icons/Search";
 import MicIcon from "@material-ui/icons/Mic";
 import { Button } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 function Search() {
 	//
 	const [input, setInput] = useState("");
+	// (input) The constant input contains a string
+	// (setInput) And we declare that we will mainpulate this string
+	// By wrapping the string in a UseState()
 
-	//
+	const history = useHistory();
+	// This provides us with the browsers history
+
 	const search = e => {
+		// the constant search  will contain an event
 		e.preventDefault();
+		// By default, the input field gets refreshed every time something is submitted
+		// This line of code stops the input field from refereshing.
+		// As a result, the previous messages that were inputed, will not be erased.
+		console.log("you hit the search button >>", input);
+		//
+		history.push("/");
+		// push this page to the search page
 	};
 	//
 	return (
