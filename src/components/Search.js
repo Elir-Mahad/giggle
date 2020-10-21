@@ -22,9 +22,13 @@ function Search() {
 		// This line of code stops the input field from refereshing.
 		// As a result, the previous messages that were inputed, will not be erased.
 		console.log("you hit the search button >>", input);
-		//
-		history.push("/");
-		// push this page to the search page
+		// whenever something is typed into the input field (i.e, the search bar)
+		// in the browsers console
+		// out put the string 'you hit the search button' + 'whatever was typed into the input field'
+		history.push("/search");
+		//  whenever the input field is clicked on and then enter is pressed
+		//  output the search results on the page (from app.js) whose route path is "/search".
+		// In other words, route the results to the page that has '/search' url
 	};
 	//
 	return (
