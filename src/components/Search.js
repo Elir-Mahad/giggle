@@ -5,9 +5,13 @@ import MicIcon from "@material-ui/icons/Mic";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
-function Search({}) {
-	// the function search has a props called 'hidebuttons'
-	// by default the value of this props is false
+function Search({ hideButtons = false }) {
+	// The function search has a props called 'hidebuttons'
+	// The prop hideButtons will be used to hide the buttons that are under the search bar.
+	// By default the value of this props is false.
+	// This means that the buttons will not be hidden by default,
+	// but they will only be hidden after the user searches for something and the results page pops up
+
 	const [input, setInput] = useState("");
 	// (input) The constant input contains a string
 	// (setInput) And we declare that we will mainpulate this string
@@ -48,20 +52,62 @@ function Search({}) {
 				{/*  */}
 			</div>
 
-			<div className="search_buttons">
-				{/*  */}
-				<Button
-					//
-					type="submit"
-					onClick={search}
-					variant="outlined"
-				>
-					Google Search
-				</Button>
+			{/* When the user searchs for something
+				the user will be re-directed to the resultspage.
+				In the results page, the search bar will be on top of the page
+				but the buttons below the search bar will be hidden.
+				Here we are going to wrap the buttons in a ternary (if and then statement).  
+				This ternary will hide the buttons.
+				 */}
 
-				<Button variant="outlined">I'm feeling lucky</Button>
-				{/*  */}
-			</div>
+			{!hideButtons ? (
+				// If the user is on the landing page
+				// and they have not searched for anything yet
+				// then we will show the buttons
+				<div className="search_buttons">
+					{/*  */}
+					<Button
+						//
+						type="submit"
+						onClick={search}
+						variant="outlined"
+					>
+						Google Search
+					</Button>
+
+					<Button variant="outlined">I'm feeling lucky</Button>
+					{/*  */}
+				</div>
+			) : (
+				// otherwise (i.e, if the user has searched for something)
+				// we will hide the buttons by giving them the class of "search_buttonsHidden"
+				// and in the css, the class search_buttonHidden will have a value of 'display:none'
+				<div className="search_buttons">
+					{/*  */}
+					<Button
+						//
+						className="search_buttonsHidden"
+						// here is we are giving it the class of hidden
+						// this will make it possible to hide the buttons
+						type="submit"
+						onClick={search}
+						variant="outlined"
+					>
+						Google Search
+					</Button>
+
+					<Button
+						//
+						className="search_buttonsHidden"
+						// here is we are giving it the class of hidden
+						// this will make it possible to hide the buttons
+						variant="outlined"
+					>
+						I'm feeling lucky
+					</Button>
+					{/*  */}
+				</div>
+			)}
 		</form>
 	);
 }
