@@ -5,8 +5,9 @@ import MicIcon from "@material-ui/icons/Mic";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
-function Search() {
-	//
+function Search({}) {
+	// the function search has a props called 'hidebuttons'
+	// by default the value of this props is false
 	const [input, setInput] = useState("");
 	// (input) The constant input contains a string
 	// (setInput) And we declare that we will mainpulate this string
