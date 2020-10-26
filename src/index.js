@@ -8,6 +8,10 @@ import { StateProvider } from "./StateProvider";
 
 ReactDOM.render(
 	<React.StrictMode>
+		{/* To use the react context api, we have to wrap the app 
+		with the stateprovider (which is the data layer). 
+		As a result we can push data into the data layer, 
+		and we can also pull data whenever we need to*/}
 		<StateProvider initialState={initialState} reducer={reducer}>
 			<App />
 		</StateProvider>
