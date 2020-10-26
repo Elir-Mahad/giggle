@@ -14,7 +14,7 @@ function Search({ hideButtons = false }) {
 	// This means that the buttons will not be hidden by default,
 	// but they will only be hidden after the user searches for something and the results page pops up
 
-	const [dispatch] = useStateValue();
+	const [{}, dispatch] = useStateValue();
 	// dispatch is like a gun that allows us to shoot actions into the data layer
 
 	const [input, setInput] = useState("");
@@ -31,6 +31,7 @@ function Search({ hideButtons = false }) {
 		// By default, the input field gets refreshed every time something is submitted
 		// This line of code stops the input field from refereshing.
 		// As a result, the previous messages that were inputed, will not be erased.
+
 		console.log("you hit the search button >>", input);
 		// whenever something is typed into the input field (i.e, the search bar)
 		// in the browsers console
@@ -41,12 +42,13 @@ function Search({ hideButtons = false }) {
 			// we are going to dispatch an action
 			type: actionTypes.SET_SEARCH_TERM,
 			// and the type of the action is actionTypes.SET_SEARCH_TERM
-			// this line matches with this line 'case actionTypes.SET_SEARCH_TERM'
-			// which is from reducer.js
+			// [ this line matches with this line 'case actionTypes.SET_SEARCH_TERM'
+			// which is from reducer.js ]
 			term: input
 			// we want the term to be whatever the input is
-			// for example: if the user inputs 'avengers' into the search bar
-			// then the term will be 'avengers'
+			// for example: if the user inputs 'tirade' into the search bar
+			// then the term will be 'tirade'
+			// In the chrome console we will get: {type: "SET_SEARCH_TERM", term: "Tirade"}
 		});
 		//
 		history.push("/search");
