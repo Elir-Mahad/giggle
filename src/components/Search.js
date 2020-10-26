@@ -37,8 +37,16 @@ function Search({ hideButtons = false }) {
 		// out put the string 'you hit the search button' + 'whatever was typed into the input field'
 
 		dispatch({
+			// whenever we type in the searh bar
+			// we are going to dispatch an action
 			type: actionTypes.SET_SEARCH_TERM,
+			// and the type of the action is actionTypes.SET_SEARCH_TERM
+			// this line matches with this line 'case actionTypes.SET_SEARCH_TERM'
+			// which is from reducer.js
 			term: input
+			// we want the term to be whatever the input is
+			// for example: if the user inputs 'avengers' into the search bar
+			// then the term will be 'avengers'
 		});
 		//
 		history.push("/search");
