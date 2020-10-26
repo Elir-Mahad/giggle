@@ -4,6 +4,8 @@ import SearchIcon from "@material-ui/icons/Search";
 import MicIcon from "@material-ui/icons/Mic";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+import { useStateValue } from "../StateProvider.js";
+import { actionTypes } from "../reducer.js";
 
 function Search({ hideButtons = false }) {
 	// The function search has a props called 'hidebuttons'
@@ -11,6 +13,9 @@ function Search({ hideButtons = false }) {
 	// By default the value of this props is false.
 	// This means that the buttons will not be hidden by default,
 	// but they will only be hidden after the user searches for something and the results page pops up
+
+	const [dispatch] = useStateValue();
+	// dispatch is like a gun that allows us to shoot actions into the data layer
 
 	const [input, setInput] = useState("");
 	// (input) The constant input contains a string
@@ -30,6 +35,12 @@ function Search({ hideButtons = false }) {
 		// whenever something is typed into the input field (i.e, the search bar)
 		// in the browsers console
 		// out put the string 'you hit the search button' + 'whatever was typed into the input field'
+
+		dispatch({
+			type: actionTypes.SET_SEARCH_TERM,
+			term: input
+		});
+		//
 		history.push("/search");
 		//  whenever the input field is clicked on and then enter is pressed
 		//  output the search results on the page (from app.js) whose route path is "/search".
