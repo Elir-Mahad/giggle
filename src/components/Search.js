@@ -15,7 +15,13 @@ function Search({ hideButtons = false }) {
 	// but they will only be hidden after the user searches for something and the results page pops up
 
 	const [{}, dispatch] = useStateValue();
-	// dispatch is like a gun that allows us to shoot actions into the data layer
+	// In the stateprovide.js, the last line is: ' export const useStateValue = () => useContext(StateContext); '
+	// This is a hook that allows us to pull information from the data layer.
+	// Now, we want to pull information for the data layer, from within this component.
+	// In order to do that, we have to write ' const [{}, dispatch] = useStateValue(); '
+	// This simply means that we are going to dispatch
+	// ( dispatch is like a gun that allows us to shoot actions into the data layer)
+	// into the data layer from within this component.
 
 	const [input, setInput] = useState("");
 	// (input) The constant input contains a string
