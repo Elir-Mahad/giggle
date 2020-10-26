@@ -4,7 +4,7 @@ import React, { createContext, useContext, useReducer } from "react";
 export const StateContext = createContext();
 // prepare the data layer to be exported
 
-export const StateProvider = ({ reducer, initialState, children } = (
+export const StateProvider = ({ reducer, initialState, children }) => (
 	//the initialstate is what the data layer looks like when the app is loaded
 	//the reducer is somthing that listens to changes that are occuring in the data layer
 	<StateContext.Provider value={useReducer(reducer, initialState)}>
@@ -28,7 +28,7 @@ export const StateProvider = ({ reducer, initialState, children } = (
 	// </StateContext.Provider>
 	// mirrors
 	// </StateProvider>
-));
+);
 
 export const useStateValue = () => useContext(StateContext);
 // this is a hook which allows us to pull information from the data layer
