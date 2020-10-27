@@ -1,4 +1,7 @@
-export default{
+
+export const Response = {
+  // We have turned the json response into an object inside our folder
+  // so that we may develop using this response.
     "kind": "customsearch#search",
     "url": {
       "type": "application/json",
@@ -537,3 +540,4 @@ export default{
     ]
   }
   
+  export default Response;

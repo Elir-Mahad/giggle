@@ -1,7 +1,8 @@
 import React from "react";
 import "./SearchPage.css";
 import { useStateValue } from "../StateProvider.js";
-import useGoogleSearch from "../useGoogleSearch.js";
+// import useGoogleSearch from "../useGoogleSearch.js";
+import Response from "../response.js";
 
 function SearchPage() {
 	//
@@ -17,8 +18,14 @@ function SearchPage() {
 	// In this particular case, we have the word term in the curly brackets.
 	// We did this because we wanted to display on the searchPage, the search terms which are being inputed by the user.
 
-	const { data } = useGoogleSearch(term);
+	//! For production, we can use the code below.
+	//! This code is for the live Api call.
+	// const { data } = useGoogleSearch(term);
 	// the constant data stores the result of the 'search term' after its looped through the hook 'useGoogleSearch'
+
+	//! In development, to avoid using up our quota for googleapi requests,
+	//! we are going to pull on the json data that's saved in response.js
+	const data = Response;
 
 	console.log(data);
 	//
