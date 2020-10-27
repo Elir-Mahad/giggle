@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import API_KEY from "./Keys";
+
+import API_KEY from "./Keys.js";
 
 const CONTEXT_KEY = "df0fd07ea83482812";
 // When we were filling out the form on this page https://cse.google.com/cse/create/new
@@ -8,7 +9,7 @@ const CONTEXT_KEY = "df0fd07ea83482812";
 
 //! Below is an example of a custom hook.
 
-const UseGoogleSearch = term => {
+const useGoogleSearch = term => {
 	// We pass into this hook (conse UseGoogleSearch),
 	// the 'term' that the user inputed into the search bar (term)
 	// and whenever term changes,
@@ -23,7 +24,7 @@ const UseGoogleSearch = term => {
 
 		const fetchData = async () => {
 			fetch(
-				`https://www.googleapis.com/customsearch/v1?/key=${API_KEY}&cx=${CONTEXT_KEY}&q=${term}`
+				`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${term}`
 				// This is the end point that connects to googles custom search api.
 				// The context key represents the search engine that we chose to run the query through.
 				// q stands for the query/term that the user inputs.
@@ -46,4 +47,4 @@ const UseGoogleSearch = term => {
 	return { data };
 };
 
-export default UseGoogleSearch;
+export default useGoogleSearch;
