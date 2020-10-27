@@ -53,17 +53,20 @@ function SearchPage() {
 						alt=""
 					/>
 				</Link>
-			</div>
 
-			<h1>{term}</h1>
-			{/* Here we are displaying the search term that's inputed by the user in an h1 tag.
+				<div className="searchPage_headerBody">
+					<Search hideButtons />
+					{/* The search component with the Hidebuttons passed through it
+				will display the search bar without the buttons onto the SearchPage */}
+
+					<div className="searchPage_options">{/*  */}</div>
+				</div>
+			</div>
+			<div className="searchPage_Results">
+				<h1>{term}</h1>
+				{/* Here we are displaying the search term that's inputed by the user in an h1 tag.
                     So if they user types 'cat' in the search bar, and then presses enter, 
                     then the word 'cat' should appear on the searchpage. */}
-
-			<div className="searchPage_headerBody">
-				<Search hideButtons />
-				{/* The search component with the Hidebuttons passed through it
-				will display the search bar without the buttons onto the SearchPage */}
 			</div>
 		</div>
 	);
