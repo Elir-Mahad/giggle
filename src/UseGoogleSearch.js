@@ -9,7 +9,7 @@ const CONTEXT_KEY = "df0fd07ea83482812";
 
 //! Below is an example of a custom hook.
 
-const useGoogleSearch = term => {
+const useGoogleSearch = (term) => {
 	// We pass into this hook (conse UseGoogleSearch),
 	// the 'term' that the user inputed into the search bar (term)
 	// and whenever term changes,
@@ -29,10 +29,10 @@ const useGoogleSearch = term => {
 				// The context key represents the search engine that we chose to run the query through.
 				// q stands for the query/term that the user inputs.
 			)
-				.then(response => response.json())
+				.then((response) => response.json())
 				// get the response in json format
 
-				.then(result => {
+				.then((result) => {
 					// take the results
 
 					setData(result);
