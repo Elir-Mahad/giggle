@@ -1,8 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./SearchPage.css";
+//
 import { useStateValue } from "../StateProvider.js";
 // import useGoogleSearch from "../useGoogleSearch.js";
 import Response from "../response.js";
+//
+import Search from "./Search.js";
+// we are importing search component,
+// because we want to display the search bar
+// without the buttons, on the search page
+
+//------------------------------------ Imports complete
 
 function SearchPage() {
 	//
@@ -32,17 +41,30 @@ function SearchPage() {
 	const data = Response;
 
 	console.log(data);
-	//
+	//show all the data in the console
+
 	return (
 		<div className="searchPage">
 			<div className="searchPage_header">
-				<h1>{term}</h1>
-				{/* Here we are displaying the search term that's inputed by the user in an h1 tag.
-                    So if they user types 'cat' in the search bar, and then presses enter, 
-                    then the word 'cat' should appear on the searchpage. */}
+				<Link to="/">
+					<img
+						className="searchPage_logo"
+						src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+						alt=""
+					/>
+				</Link>
 			</div>
 
-			<div className="searchPage_results"></div>
+			<h1>{term}</h1>
+			{/* Here we are displaying the search term that's inputed by the user in an h1 tag.
+                    So if they user types 'cat' in the search bar, and then presses enter, 
+                    then the word 'cat' should appear on the searchpage. */}
+
+			<div className="searchPage_headerBody">
+				<Search hideButtons />
+				{/* The search component with the Hidebuttons passed through it
+				will display the search bar without the buttons onto the SearchPage */}
+			</div>
 		</div>
 	);
 }
