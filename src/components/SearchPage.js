@@ -1,6 +1,7 @@
 import React from "react";
 import "./SearchPage.css";
 import { useStateValue } from "../StateProvider.js";
+import useGoogleSearch from "../UseGoogleSearch.js";
 
 function SearchPage() {
 	//
@@ -15,6 +16,12 @@ function SearchPage() {
 	//
 	// In this particular case, we have the word term in the curly brackets.
 	// We did this because we wanted to display on the searchPage, the search terms which are being inputed by the user.
+
+	const { data } = useGoogleSearch(term);
+	// the constant data stores the result of the 'search term' after its looped through the hook 'useGoogleSearch'
+
+	console.log(data);
+	//
 	return (
 		<div className="searchPage">
 			<div className="searchPage_header">

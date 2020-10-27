@@ -1,4 +1,4 @@
-import React, { useState, useffect } from "react";
+import React, { useState, useEffect } from "react";
 import API_KEY from "./Keys";
 
 const CONTEXT_KEY = "df0fd07ea83482812";
@@ -20,8 +20,30 @@ const UseGoogleSearch = term => {
 	useEffect(() => {
 		// Whenever we use this hook, it is going to fire off a useEffect,
 		// and this useEffect is dependent on the 'term'
+
+		const fetchData = async () => {
+			fetch(
+				`https://www.googleapis.com/customsearch/v1?/key=${API_KEY}&cx=${CONTEXT_KEY}&q=${term}`
+				// This is the end point that connects to googles custom search api.
+				// The context key represents the search engine that we chose to run the query through.
+				// q stands for the query/term that the user inputs.
+			)
+				.then(response => response.json())
+				// get the response in json format
+
+				.then(result => {
+					// take the results
+
+					setData(result);
+					// insert the results into the constant Data
+				});
+		};
+		//
+		fetchData();
+		// fetch the constant data
 	}, [term]);
 	//
+	return { data };
 };
 
 export default UseGoogleSearch;
