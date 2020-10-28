@@ -117,18 +117,37 @@ function SearchPage() {
 				// In the div below, we are pulling all the data from the saved json in response.js
 				// We are using the end points in the json to pull the data
 				// The word 'data', thats at the beginning of the end point, has'?' in front it .
-				// This is called optional chaning.
+				// This is called optional chaining.
 				// We are using the '?' because we assume that
 				// the data might be delayed while its being fetching,
 				// and we don't want the code to break during that delay.
-				<div className="searchPage_Results">
+				<div className="searchPage_results">
 					<p className="searchPage_resultcount">
 						About {data?.searchInformation.formattedTotalResults} results ,
 						{/* this endpoint is fetching the result count */}
-						in {data?.searchInformation.formattedSearchTime} seconds, for{term}
+						in {data?.searchInformation.formattedSearchTime} seconds, for {term}
 						{/* this endpoint is fetching the time it took to get all the results
 							and it's displaying the search term */}
 					</p>
+					{data?.items.map((item) => (
+						// map through each item in the data, and render the below endpoints
+						<div className="searchPage_result">
+							<a href={item.link}>
+								{/*  */}
+								{item.displayLink} ▽{/* the website */}
+							</a>
+							<a className="searchPage_resultTitle" href={item.link}>
+								{/*  */}
+								<h2>{item.title}</h2>
+								{/* the title */}
+							</a>
+							<p className="searchPage_resultSnippet">
+								{/*  */}
+								{item.snippet}
+								{/* the snippet */}
+							</p>
+						</div>
+					))}
 				</div>
 			)}
 		</div>
