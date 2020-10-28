@@ -63,7 +63,7 @@ function SearchPage() {
 				<div className="searchPage_headerBody">
 					<Search hideButtons />
 					{/* The search component with the Hidebuttons passed through it
-				will display the search bar without the buttons onto the SearchPage */}
+						will display the search bar without the buttons onto the SearchPage */}
 
 					<div className="searchPage_options">
 						<div className="searchPage_optionsLeft">
@@ -111,12 +111,26 @@ function SearchPage() {
 					</div>
 				</div>
 			</div>
-			<div className="searchPage_Results">
-				<h1>{term}</h1>
-				{/* Here we are displaying the search term that's inputed by the user in an h1 tag.
-                    So if they user types 'cat' in the search bar, and then presses enter, 
-                    then the word 'cat' should appear on the searchpage. */}
-			</div>
+
+			{term && (
+				// If a search term has been submitted, then render the below div.
+				// In the div below, we are pulling all the data from the saved json in response.js
+				// We are using the end points in the json to pull the data
+				// The word 'data', thats at the beginning of the end point, has'?' in front it .
+				// This is called optional chaning.
+				// We are using the '?' because we assume that
+				// the data might be delayed while its being fetching,
+				// and we don't want the code to break during that delay.
+				<div className="searchPage_Results">
+					<p className="searchPage_resultcount">
+						About {data?.searchInformation.formattedTotalResults} results ,
+						{/* this endpoint is fetching the result count */}
+						in {data?.searchInformation.formattedSearchTime} seconds, for{term}
+						{/* this endpoint is fetching the time it took to get all the results
+							and it's displaying the search term */}
+					</p>
+				</div>
+			)}
 		</div>
 	);
 }
