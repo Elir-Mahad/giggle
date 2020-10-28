@@ -1,0 +1,15 @@
+//! For production, we can use the code below.
+
+//! In development, to avoid using up our quota for googleapi requests,
+
+//! So, when you enter a word into the search bar, the word will alwys be displayed on the SearchPage
+
+//! The json data in response.js is the result for the search word 'covid'
+
+//! This code is for the live Api call.
+
+//! but it will not pass through the api, and therefore
+
+//! the json that will appear in the browser console will always be the covid results json
+
+//! we are going to pull on the json data that's saved in response.js.
