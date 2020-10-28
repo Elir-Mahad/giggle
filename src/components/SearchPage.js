@@ -132,8 +132,24 @@ function SearchPage() {
 					{data?.items.map((item) => (
 						// map through each item in the data, and render the below endpoints
 						<div className="searchPage_result">
-							<a href={item.link}>
+							<a className="searchPage_resultLink" href={item.link}>
 								{/*  */}
+								{item.pagemap?.cse_image?.length > 0 &&
+									// if the length of 'pagemap.cse_image' is longer than 0,
+									// then that means there is an image in there
+									// then render the below code
+									item.pagemap?.cse_image[0]?.src && (
+										<img
+											className="searchPage_resultImage"
+											src={
+												//
+												item.pagemap?.cse_image?.length > 0 &&
+												item.pagemap?.cse_image[0]?.src
+											}
+											alt=""
+										/>
+									)}
+								{/*if there is an image, then access the source and render the image*/}
 								{item.displayLink} ▽{/* the website */}
 							</a>
 							<a className="searchPage_resultTitle" href={item.link}>
