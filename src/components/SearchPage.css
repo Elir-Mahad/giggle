@@ -9,6 +9,27 @@
 	border-bottom: 1px solid lightgray;
 }
 
+@media screen and (max-width: 1039px) {
+	.searchPage_logo {
+		width: 100%;
+	}
+
+	.searchPage_header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.searchPage_option a {
+		display: none;
+	}
+
+	.searchPage_results {
+		position: relative;
+		left: -13rem;
+		width: 90%;
+	}
+}
+
 .searchPage_logo {
 	object-fit: contain;
 	height: 50px;
@@ -19,7 +40,7 @@
 	/* this is removing the styling of some of the elements on search.js 
     The styling of theelements within the div that has the class 'search_input' will be changed*/
 	margin-top: 0;
-	width: unset;
+	/* width: unset; */
 	margin: unset;
 	max-width: unset;
 }

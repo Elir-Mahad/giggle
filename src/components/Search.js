@@ -31,7 +31,7 @@ function Search({ hideButtons = false }) {
 	const history = useHistory();
 	// This provides us with the browsers history
 
-	const search = e => {
+	const search = (e) => {
 		// the constant search  will contain an event
 		e.preventDefault();
 		// By default, the input field gets refreshed every time something is submitted
@@ -73,7 +73,7 @@ function Search({ hideButtons = false }) {
 				<input
 					//
 					value={input}
-					onChange={e => setInput(e.target.value)}
+					onChange={(e) => setInput(e.target.value)}
 				/>
 				<MicIcon />
 				{/*  */}
