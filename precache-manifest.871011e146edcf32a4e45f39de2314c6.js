@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ffaf4f3576ed21a6ba6d9e150a8677c",
+    "revision": "893411e76cb1b8c88d1f9ac2e8145580",
     "url": "/giggle/index.html"
   },
   {
-    "revision": "5a0a0ddd7e6327ce4263",
-    "url": "/giggle/static/css/main.4996f294.chunk.css"
+    "revision": "ef7d26be808a0ae15fa6",
+    "url": "/giggle/static/css/main.0a7c3ec9.chunk.css"
   },
   {
     "revision": "070e5e6d80bbc6fa0362",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/giggle/static/js/2.1ea4f36d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5a0a0ddd7e6327ce4263",
+    "revision": "ef7d26be808a0ae15fa6",
     "url": "/giggle/static/js/main.ff8c666d.chunk.js"
   },
   {

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/giggle/static/css/main.4996f294.chunk.css",
+    "main.css": "/giggle/static/css/main.0a7c3ec9.chunk.css",
     "main.js": "/giggle/static/js/main.ff8c666d.chunk.js",
     "main.js.map": "/giggle/static/js/main.ff8c666d.chunk.js.map",
     "runtime-main.js": "/giggle/static/js/runtime-main.bdce2bb9.js",
@@ -8,16 +8,16 @@
     "static/js/2.1ea4f36d.chunk.js": "/giggle/static/js/2.1ea4f36d.chunk.js",
     "static/js/2.1ea4f36d.chunk.js.map": "/giggle/static/js/2.1ea4f36d.chunk.js.map",
     "index.html": "/giggle/index.html",
-    "precache-manifest.7c8ff1cc4e0e90eb66746cdd5fe5358e.js": "/giggle/precache-manifest.7c8ff1cc4e0e90eb66746cdd5fe5358e.js",
+    "precache-manifest.871011e146edcf32a4e45f39de2314c6.js": "/giggle/precache-manifest.871011e146edcf32a4e45f39de2314c6.js",
     "service-worker.js": "/giggle/service-worker.js",
-    "static/css/main.4996f294.chunk.css.map": "/giggle/static/css/main.4996f294.chunk.css.map",
+    "static/css/main.0a7c3ec9.chunk.css.map": "/giggle/static/css/main.0a7c3ec9.chunk.css.map",
     "static/js/2.1ea4f36d.chunk.js.LICENSE.txt": "/giggle/static/js/2.1ea4f36d.chunk.js.LICENSE.txt",
     "static/js/main.ff8c666d.chunk.js.LICENSE.txt": "/giggle/static/js/main.ff8c666d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bdce2bb9.js",
     "static/js/2.1ea4f36d.chunk.js",
-    "static/css/main.4996f294.chunk.css",
+    "static/css/main.0a7c3ec9.chunk.css",
     "static/js/main.ff8c666d.chunk.js"
   ]
 }
