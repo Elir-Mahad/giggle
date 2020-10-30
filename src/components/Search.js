@@ -71,7 +71,7 @@ function Search({ hideButtons = false }) {
 				<SearchIcon className="search_inputIcon" />
 				{/*  */}
 				<input
-					//
+					className="search_inputField"
 					value={input}
 					onChange={(e) => setInput(e.target.value)}
 				/>

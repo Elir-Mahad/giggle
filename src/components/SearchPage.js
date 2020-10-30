@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "./SearchPage.css";
 //
 import { useStateValue } from "../StateProvider.js";
-import useGoogleSearch from "../useGoogleSearch.js";
-// import Response from "../response.js";
+// import useGoogleSearch from "../useGoogleSearch.js";
+import Response from "../response.js";
 //
 import Search from "./Search.js";
 // we are importing search component,
@@ -14,7 +14,6 @@ import Search from "./Search.js";
 import SearchIcon from "@material-ui/icons/Search";
 import DescriptionIcon from "@material-ui/icons/Description";
 import ImageIcon from "@material-ui/icons/Image";
-import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import RoomIcon from "@material-ui/icons/Room";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 //------------------------------------ Imports complete
@@ -35,7 +34,7 @@ function SearchPage() {
 
 	//! For production, we can use the code below.
 	//! This code is for the live Api call.
-	const { data } = useGoogleSearch(term);
+	// const { data } = useGoogleSearch(term);
 	// the constant data stores the result of the 'search term' after its looped through the hook 'useGoogleSearch'
 
 	//! In development, to avoid using up our quota for googleapi requests,
@@ -44,7 +43,7 @@ function SearchPage() {
 	//! So, when you enter a word into the search bar, the word will alwys be displayed on the SearchPage
 	//! but it will not pass through the api, and therefore
 	//! the json that will appear in the browser console will always be the covid results json
-	// const data = Response;
+	const data = Response;
 
 	console.log(data);
 	//show all the data in the console
@@ -83,17 +82,12 @@ function SearchPage() {
 								<Link to="/images"> Images</Link>
 							</div>
 							{/*  */}
-							<div className="searchPage_option">
-								<LocalOfferIcon />
-								<Link to="/shopping"> Shopping</Link>
-							</div>
-							{/*  */}
-							<div className="searchPage_option">
+							<div className="searchPage_option remove_option">
 								<RoomIcon />
 								<Link to="/maps"> maps</Link>
 							</div>
 							{/*  */}
-							<div className="searchPage_option">
+							<div className="searchPage_option remove_option">
 								<MoreVertIcon />
 								<Link to="/more"> more</Link>
 							</div>
