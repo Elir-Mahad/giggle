@@ -67,20 +67,20 @@
 /* results */
 
 .searchPage_results {
-	padding-left: 30px;
-	padding-right: 30px;
+	/* background-color: green; */
+	margin-left: 7rem;
+	margin-right: 7rem;
 }
 
 .searchPage_result {
+	/* background-color: red; */
 	display: flex;
 	flex-direction: column;
 	margin: 40px 0;
 }
 
 .searchPage_results {
-	/* max-width: 650px; */
 	margin-top: 20px;
-	/* margin-left: 240px; */
 	margin-bottom: 100px;
 }
 
