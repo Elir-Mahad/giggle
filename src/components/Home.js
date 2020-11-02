@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.css";
+import searchsquid from "../assets/searchsquid.png";
+//
 import { Link } from "react-router-dom";
 import AppsIcon from "@material-ui/icons/Apps";
 import { Avatar } from "@material-ui/core";
@@ -27,7 +29,8 @@ function Home() {
 			<div className="home_body">
 				<img
 					//
-					src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+					className="home_logoo"
+					src={searchsquid}
 					alt=""
 				/>
 				<div className="home_inputContainer">
