@@ -150,12 +150,10 @@
 @media screen and (max-width: 600px) {
 	/*  */
 	.searchPage_headerBody > .search {
-		background-color: red;
 		width: 100%;
 	}
 
 	.searchPage_headerBody > .search > .search_input {
-		background-color: green;
 		width: 93%;
 	}
 
@@ -178,7 +176,6 @@
 @media screen and (max-width: 500px) {
 	/*  */
 	.searchPage_headerBody > .search > .search_input {
-		background-color: green;
 		width: 90%;
 	}
 
