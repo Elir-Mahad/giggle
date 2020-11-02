@@ -33,6 +33,10 @@
 	padding: 1rem;
 }
 
+/* .searchPage_headerBody > .search > .search_input .search_inputField {
+	background-color: #fffaf0;
+} */
+
 .searchPage_options {
 	display: flex;
 	justify-content: space-between;
@@ -67,8 +71,8 @@
 /* results */
 
 .searchPage_results {
-	margin-left: 7rem;
-	margin-right: 7rem;
+	padding-left: 7rem;
+	padding-right: 7rem;
 }
 
 .searchPage_result {
