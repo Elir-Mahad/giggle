@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/giggle/static/css/main.cd28ddfe.chunk.css",
-    "main.js": "/giggle/static/js/main.231f9523.chunk.js",
-    "main.js.map": "/giggle/static/js/main.231f9523.chunk.js.map",
+    "main.css": "/giggle/static/css/main.2f861b17.chunk.css",
+    "main.js": "/giggle/static/js/main.0b5b586c.chunk.js",
+    "main.js.map": "/giggle/static/js/main.0b5b586c.chunk.js.map",
     "runtime-main.js": "/giggle/static/js/runtime-main.bdce2bb9.js",
     "runtime-main.js.map": "/giggle/static/js/runtime-main.bdce2bb9.js.map",
     "static/js/2.4f0fa020.chunk.js": "/giggle/static/js/2.4f0fa020.chunk.js",
     "static/js/2.4f0fa020.chunk.js.map": "/giggle/static/js/2.4f0fa020.chunk.js.map",
     "index.html": "/giggle/index.html",
-    "precache-manifest.be02e74d3f53d0bb231f9a05a8374c0f.js": "/giggle/precache-manifest.be02e74d3f53d0bb231f9a05a8374c0f.js",
+    "precache-manifest.323cdcd0195ee5d698514753207c4664.js": "/giggle/precache-manifest.323cdcd0195ee5d698514753207c4664.js",
     "service-worker.js": "/giggle/service-worker.js",
-    "static/css/main.cd28ddfe.chunk.css.map": "/giggle/static/css/main.cd28ddfe.chunk.css.map",
+    "static/css/main.2f861b17.chunk.css.map": "/giggle/static/css/main.2f861b17.chunk.css.map",
     "static/js/2.4f0fa020.chunk.js.LICENSE.txt": "/giggle/static/js/2.4f0fa020.chunk.js.LICENSE.txt",
-    "static/js/main.231f9523.chunk.js.LICENSE.txt": "/giggle/static/js/main.231f9523.chunk.js.LICENSE.txt"
+    "static/js/main.0b5b586c.chunk.js.LICENSE.txt": "/giggle/static/js/main.0b5b586c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bdce2bb9.js",
     "static/js/2.4f0fa020.chunk.js",
-    "static/css/main.cd28ddfe.chunk.css",
-    "static/js/main.231f9523.chunk.js"
+    "static/css/main.2f861b17.chunk.css",
+    "static/js/main.0b5b586c.chunk.js"
   ]
 }
