@@ -92,7 +92,7 @@ function SearchPage() {
 						</div>
 						<div className="searchPage_optionsRight">
 							{/*  */}
-							<div className="searchPage_option">
+							<div className="searchPage_option remove_option">
 								<Link to="/settings"> Settings </Link>
 							</div>
 							{/*  */}
@@ -102,6 +102,7 @@ function SearchPage() {
 							{/*  */}
 							<Button
 								//
+								className="signup_button"
 								type="submit"
 								variant="outlined"
 							>
