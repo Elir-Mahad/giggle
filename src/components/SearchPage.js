@@ -96,7 +96,7 @@ function SearchPage() {
 								<Link to="/settings"> Settings </Link>
 							</div>
 							{/*  */}
-							<div className="searchPage_option">
+							<div className="searchPage_option remove_option">
 								<Link to="/tools"> Tools </Link>
 							</div>
 							{/*  */}

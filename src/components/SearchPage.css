@@ -129,14 +129,19 @@
 	}
 
 	.searchPage_headerBody > .search > .search_input {
-		width: 90%;
+		width: 100%;
 	}
 
 	.searchPage_options {
 		justify-content: center;
+		/* background-color: red; */
 	}
 
-	.searchPage_optionsRight {
+	/* .searchPage_optionsRight {
+		display: none;
+	} */
+
+	.searchPage_optionsLeft > .remove_option {
 		display: none;
 	}
 }
@@ -148,9 +153,9 @@
 		margin: auto;
 	}
 
-	.searchPage_optionsLeft > .remove_option {
+	/* .searchPage_optionsLeft > .remove_option {
 		display: none;
-	}
+	} */
 
 	.searchPage_optionsLeft {
 		width: 100%;
