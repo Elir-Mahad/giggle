@@ -158,8 +158,8 @@
 	}
 
 	.searchPage_results {
-		margin-left: 3rem;
-		margin-right: 3rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
 	}
 }
 
@@ -173,8 +173,8 @@
 	}
 
 	.searchPage_results {
-		margin-left: 2rem;
-		margin-right: 2rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 }
 
@@ -188,14 +188,14 @@
 	}
 
 	.searchPage_results {
-		margin-left: 1.5rem;
-		margin-right: 1rem;
+		padding-left: 1.5rem;
+		padding-right: 1rem;
 	}
 }
 
 @media screen and (max-width: 320px) {
 	.searchPage_results {
-		margin-left: 1rem;
-		margin-right: 0.5rem;
+		padding-left: 1rem;
+		padding-right: 0.5rem;
 	}
 }
