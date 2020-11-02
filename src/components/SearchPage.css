@@ -128,6 +128,7 @@
 /* media queries */
 
 @media screen and (max-width: 1039px) {
+	/*  */
 	.searchPage_logo {
 		width: 100%;
 	}
@@ -149,15 +150,16 @@
 @media screen and (max-width: 600px) {
 	/*  */
 	.searchPage_headerBody > .search {
+		background-color: red;
 		width: 100%;
 	}
 
 	.searchPage_headerBody > .search > .search_input {
+		background-color: green;
 		width: 93%;
 	}
 
 	.searchPage_optionsLeft {
-		/* background-color: red; */
 		width: 100%;
 		justify-content: center;
 	}
@@ -174,6 +176,12 @@
 }
 
 @media screen and (max-width: 500px) {
+	/*  */
+	.searchPage_headerBody > .search > .search_input {
+		background-color: green;
+		width: 90%;
+	}
+
 	.searchPage_optionsRight > .remove_option {
 		display: none;
 	}
@@ -185,12 +193,9 @@
 }
 
 @media screen and (max-width: 360px) {
+	/*  */
 	.searchPage_headerBody > .search > .search_input {
-		width: 70%;
-	}
-
-	.searchPage_headerBody > .search > .search_input .search_inputField {
-		width: 50%;
+		width: 90%;
 	}
 
 	.searchPage_results {
@@ -199,7 +204,12 @@
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 330px) {
+	/*  */
+	.searchPage_optionsRight > .signup_button {
+		display: none;
+	}
+
 	.searchPage_results {
 		padding-left: 1rem;
 		padding-right: 0.5rem;
