@@ -101,10 +101,10 @@ function Search({ hideButtons = false }) {
 						onClick={search}
 						variant="outlined"
 					>
-						Google Search
+						Squid Search
 					</Button>
 
-					<Button variant="outlined">I'm feeling lucky</Button>
+					<Button variant="outlined">I'm feeling Squiddly</Button>
 					{/*  */}
 				</div>
 			) : (
