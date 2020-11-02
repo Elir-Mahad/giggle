@@ -19,8 +19,8 @@
 
 .searchPage_logo {
 	object-fit: contain;
-	height: 50px;
-	margin-right: 50px;
+	height: 110px;
+	margin-right: 10px;
 }
 
 .searchPage_headerBody > .search > .search_input {
@@ -35,14 +35,14 @@
 
 .searchPage_options {
 	display: flex;
-	align-items: center;
+	justify-content: space-between;
 	color: grey;
 }
 
 .searchPage_options a,
 .searchPage_optionsRight a {
 	text-decoration: none;
-	color: gray;
+	color: #499861;
 }
 
 .searchPage_optionsRight,
@@ -51,7 +51,7 @@
 }
 
 .searchPage_optionsRight {
-	margin-left: 80px;
+	display: flex;
 }
 
 .searchPage_option {

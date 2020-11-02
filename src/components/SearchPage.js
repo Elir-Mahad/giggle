@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./SearchPage.css";
+import searchsquid from "../assets/searchsquid.png";
 //
 import { useStateValue } from "../StateProvider.js";
 // import useGoogleSearch from "../useGoogleSearch.js";
@@ -16,6 +17,7 @@ import DescriptionIcon from "@material-ui/icons/Description";
 import ImageIcon from "@material-ui/icons/Image";
 import RoomIcon from "@material-ui/icons/Room";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import { Button } from "@material-ui/core";
 //------------------------------------ Imports complete
 
 function SearchPage() {
@@ -52,11 +54,7 @@ function SearchPage() {
 		<div className="searchPage">
 			<div className="searchPage_header">
 				<Link to="/">
-					<img
-						className="searchPage_logo"
-						src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-						alt=""
-					/>
+					<img className="searchPage_logo" src={searchsquid} alt="" />
 				</Link>
 
 				<div className="searchPage_headerBody">
@@ -101,6 +99,14 @@ function SearchPage() {
 							<div className="searchPage_option">
 								<Link to="/tools"> Tools </Link>
 							</div>
+							{/*  */}
+							<Button
+								//
+								type="submit"
+								variant="outlined"
+							>
+								Sign in
+							</Button>
 						</div>
 					</div>
 				</div>
