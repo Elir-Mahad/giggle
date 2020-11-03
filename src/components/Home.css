@@ -17,7 +17,8 @@
     we write 'home_header a' */
 	margin-right: 20px;
 	text-decoration: inherit;
-	color: rgba(0, 0, 0, 0.87);
+	color: #499861;
+	font-weight: 500;
 	font-size: 15px;
 }
 
@@ -46,6 +47,11 @@
 .home_body > img {
 	object-fit: contain;
 	height: 150px;
+}
+
+.home_inputContainer > .search > .search_buttons > button {
+	border: 1px solid #fec03b;
+	text-transform: inherit;
 }
 
 /* media */
