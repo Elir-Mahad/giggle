@@ -73,7 +73,37 @@
 }
 
 @media screen and (max-width: 380px) {
+	/*  */
+	.home_inputContainer > .search {
+		padding-left: 1rem;
+	}
+
+	.home_inputContainer > .search > .search_input {
+		/* this is removing the styling of some of the elements on search.js 
+		The styling of theelements within the div that has the class 'search_input' will be changed*/
+		margin-top: 0;
+		margin: unset;
+		max-width: unset;
+		padding: 1rem;
+	}
+
 	.home_inputContainer .search_input {
-		width: 87%;
+		width: 86%;
+		justify-content: center;
+	}
+
+	.home_inputContainer > .search > .search_buttons > button {
+		padding: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	/*  */
+	.home_inputContainer .search_inputIcon {
+		display: none;
+	}
+
+	.home_inputContainer .search_input {
+		width: 84%;
 	}
 }

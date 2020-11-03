@@ -76,7 +76,7 @@ function Search({ hideButtons = false }) {
 					value={input}
 					onChange={(e) => setInput(e.target.value)}
 				/>
-				<MicIcon />
+				<MicIcon className="search_inputIcon" />
 
 				{/*  */}
 			</div>
