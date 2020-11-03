@@ -49,6 +49,10 @@
 	height: 150px;
 }
 
+.home_inputContainer .search_input > input {
+	border: none;
+}
+
 .home_inputContainer > .search > .search_buttons > button {
 	border: 1px solid #fec03b;
 	text-transform: inherit;
