@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b9d0c37da4249cb53d6de9e006385f8e",
+    "revision": "ca4277983d32bd0db14f0d6cdb1165b7",
     "url": "/giggle/index.html"
   },
   {
-    "revision": "532bd6e66cf03b635690",
+    "revision": "a6abe1474dcb0a7b903a",
     "url": "/giggle/static/css/main.4576250b.chunk.css"
   },
   {
-    "revision": "6ac94ce97ab13cb06e13",
-    "url": "/giggle/static/js/2.4f0fa020.chunk.js"
+    "revision": "58a6cc42172f7486ce2b",
+    "url": "/giggle/static/js/2.d85fcfd8.chunk.js"
   },
   {
     "revision": "6397acf4c5cafcd591a770ce33fc3e2f",
-    "url": "/giggle/static/js/2.4f0fa020.chunk.js.LICENSE.txt"
+    "url": "/giggle/static/js/2.d85fcfd8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "532bd6e66cf03b635690",
-    "url": "/giggle/static/js/main.f671a374.chunk.js"
+    "revision": "a6abe1474dcb0a7b903a",
+    "url": "/giggle/static/js/main.9b9b9d6d.chunk.js"
   },
   {
     "revision": "20b7c01b6238f99a3413c7c13a1dab42",
-    "url": "/giggle/static/js/main.f671a374.chunk.js.LICENSE.txt"
+    "url": "/giggle/static/js/main.9b9b9d6d.chunk.js.LICENSE.txt"
   },
   {
     "revision": "8f0541b321077d555528",
