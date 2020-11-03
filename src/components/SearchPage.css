@@ -175,8 +175,18 @@
 
 @media screen and (max-width: 500px) {
 	/*  */
+	.searchPage_logo {
+		margin-top: -2.5rem;
+	}
+
 	.searchPage_headerBody > .search > .search_input {
 		width: 90%;
+		margin-top: -1rem;
+	}
+
+	.searchPage_headerBody > .searchPage_options {
+		margin-top: -1rem;
+		margin-bottom: -1rem;
 	}
 
 	.searchPage_optionsRight > .remove_option {
