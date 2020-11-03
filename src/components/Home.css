@@ -47,3 +47,23 @@
 	object-fit: contain;
 	height: 150px;
 }
+
+/* media */
+
+@media screen and (max-width: 414px) {
+	/*  */
+	.home_header {
+		justify-content: space-between;
+	}
+
+	.home_headerLeft .remove_option,
+	.home_headerRight .remove_option {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.home_inputContainer .search_input {
+		width: 87%;
+	}
+}

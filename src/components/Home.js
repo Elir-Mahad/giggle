@@ -19,8 +19,10 @@ function Home() {
 
 				<div className="home_headerRight">
 					<Link to="/gmail">Squidmail</Link>
-					<Link to="/images">Images</Link>
-					<AppsIcon />
+					<Link to="/images" className="remove_option">
+						Images
+					</Link>
+					<AppsIcon className="remove_option" />
 					<Avatar />
 				</div>
 				{/*  */}
